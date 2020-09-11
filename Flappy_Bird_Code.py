@@ -78,7 +78,7 @@ def mainGame():
             if event.type == QUIT or (event.type == KEYDOWN and event.key == K_ESCAPE):
                 pygame.quit()
                 sys.exit()
-            if event.type == KEYDOWN and (event.type == K_SPACE or event.type == K_UP):
+            if event.type == KEYDOWN and (event.key == K_SPACE or event.key == K_UP):
                 if playery > 0:
                     playerVelY = playerFlapAccV
                     playerFlapped = True
